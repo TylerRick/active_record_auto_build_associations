@@ -1,0 +1,4 @@
+require 'active_record'
+module ActiveRecord::AutoBuildAssociations
+  Version = "0.0.1"
+end
