@@ -17,12 +17,12 @@ This makes it so that any time you do `user.address`, if an existing associated 
 To do
 =====
 
-* Currently it only works for has_one -- make it work for has_many
+* Currently it only works for has_one -- make it work for has_many and belongs_to (belongs_to kind of works but not well)
 * Add tests
 
 License
 =======
 
-Copyright 2011, Tyler Rick.
+Copyright 2011, Tyler Rick
 
 This is free software, distributed under the terms of the MIT License.
