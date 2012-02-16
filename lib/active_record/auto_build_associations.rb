@@ -15,18 +15,17 @@ module ActiveRecord
       end
 
       def self.auto_build_association(assoc_name)
-        define_method :"#{assoc_name}_with_auto_build" do
+        define_method :"#{assoc_name}" do
           if self.class.auto_build_associations? == false
-            send(:"#{assoc_name}_without_auto_build")
+            super()
           else
-            send(:"#{assoc_name}_without_auto_build") || (
+            super() || (
               # TODO: reflect on association; for has_many, it should do assoc_name.build instead
               send(:"build_#{assoc_name}")
-              send(:"#{assoc_name}_without_auto_build")
+              super()
             )
           end
         end
-        alias_method_chain :"#{assoc_name}", :auto_build
       end
 
     end # included
