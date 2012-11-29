@@ -6,5 +6,5 @@ rescue LoadError
 end
 
 module ActiveRecord::AutoBuildAssociations
-  def self.version; "0.0.2"; end
+  def self.version; "0.1.0"; end
 end
