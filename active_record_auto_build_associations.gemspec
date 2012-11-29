@@ -4,7 +4,7 @@ require "active_record/auto_build_associations/version"
 
 Gem::Specification.new do |s|
   s.name        = "active_record_auto_build_associations"
-  s.version     = ActiveRecord::AutoBuildAssociations::Version
+  s.version     = ActiveRecord::AutoBuildAssociations.version
   s.authors     = ["Tyler Rick"]
   s.email       = ["tyler@tylerrick.com"]
   s.homepage    = ""
